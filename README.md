@@ -10,6 +10,8 @@ Each state has certain properties - positions of the plant, farmer, goat and tig
 
 
 The key contents of this repository are:
-1. State.h: Header file that models the problem as a series of states by defining private member variables, 
+1. State.h: Header file that models the problem as a series of states 
 2. State.cpp: C++ Source code file that implements constructors and functions per the headers defined in the State.h header file
-3. StateManager.h: Header file that 
+3. StateManager.h: Header file that leverages abstraction and functionality offered by the State class in generating a state space tree for the problem to be later explored using the A* search algorithm for finding an optimal solution
+4. StateManger.cpp: C++ Source code file that implements constructors and functions per the headers defined in the StateManager.h header file
+5. RiverCrossing.cpp: The client C++ Source code file containing the main() function - it creates an instance of the StateManager class and invokes relevant functionality to solve the river crossing problem
